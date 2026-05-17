@@ -2,7 +2,7 @@ echo "This script is to setup git and connect it with github using ssh"
 read -p "Enter your user name : " name
 git config --global user.name $name
 read -p "Enter your user email : " email
-git config --global user.emai $email
+git config --global user.email $email
 git config --list
 echo "Your configured successfully"
 
