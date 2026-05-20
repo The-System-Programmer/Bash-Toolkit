@@ -1,0 +1,27 @@
+configure terminal
+interface fastEthernet 0/0
+ip address 192.168.10.1 255.255.255.0
+no shutdown
+exit
+
+interface fastEthernet 0/1
+ip address 192.168.20.1 255.255.255.0
+no shutdown
+exit
+
+ip dhcp pool LAN1
+network 192.168.10.0 255.255.255.0
+default-router 192.168.10.1
+dns-server 8.8.8.8
+exit
+
+ip dhcp pool LAN2
+network 192.168.20.0 255.255.255.0
+default-router 192.168.20.1
+dns-server 8.8.8.8
+exit
+
+exit
+
+write
+show ip dhcp pool
