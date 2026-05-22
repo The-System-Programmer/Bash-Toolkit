@@ -21,6 +21,8 @@ default-router 192.168.20.1
 dns-server 8.8.8.8
 exit
 
+ip dhcp excluded-address 192.168.10.1
+ip dhcp excluded-address 132.168.20.1
 exit
 
 write
