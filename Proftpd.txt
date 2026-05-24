@@ -1,5 +1,0 @@
-sudo apt update
-sudo apt install proftpd
-sudo useradd -m name
-sudo passwd name
-sudo chown -R name:name /home/dell/Shared/
